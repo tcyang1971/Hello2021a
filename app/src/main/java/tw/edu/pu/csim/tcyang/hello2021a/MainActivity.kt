@@ -2,6 +2,7 @@ package tw.edu.pu.csim.tcyang.hello2021a
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -26,4 +27,12 @@ class MainActivity : AppCompatActivity() {
             var txv: TextView = findViewById<TextView>(R.id.txv)
             txv.text = "Dev分支"
         }
+
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "tcyangpu修改螢幕觸控"
+        return true
     }
+
+
+}
