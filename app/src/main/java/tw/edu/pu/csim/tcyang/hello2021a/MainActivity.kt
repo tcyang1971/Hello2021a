@@ -34,5 +34,10 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "tcyangpu修改螢幕觸控"
+        return true
+    }
 
 }
